@@ -23,6 +23,11 @@
     <hr>
 
     <!-- Se puede utilizar require, include,  require_once o include_once -->
+    <!-- Con esta simple acción, si el programa se encuentra con un include o un include_once que ya se ejecutó y se encuentra con otro igual, simplemente lo ignorará. Utilicemos entonces include_once como regla general.
+
+Ahora bien, la diferencia entre include y require es simple. El comando include solamente intentará incluir el archivo que se le pidió. Independientemente si lo encuentra o no, el programa sigue adelante. La ejecución no se detiene, lo único a lo que podemos aspirar es a una advertencia por parte de PHP.
+
+Por el contrario, para require es muy importante que el archivo que se le pide llegue y se instale en el programa. Si no lo encuentra detiene la ejecución y envía un mensaje de error fatal. La sintaxis es la misma, y al igual que con include, usaremos require_once en lugar del ordinario require. -->
     <?php include_once "require.php" ?>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
